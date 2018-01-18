@@ -1,0 +1,11 @@
+#for examplecafe2
+- {filename: 'table1.png', position: { x: 2.280, y: -0.137}, quaternion: {r1: -0.000, r2: -0.000, r3: 0.758, r4: 0.654}}
+- {filename: 'table2.png', position: { x: 0.414, y: -5.597}, quaternion: {r1: 0.000, r2: 0.000, r3: 0.957, r4: -0.286}}
+- {filename: 'table3.png', position: { x: -3.179, y: -2.436}, quaternion: {r1: -0.000, r2: -0.000, r3: 0.835, r4: 0.551}}
+- {filename: 'table4.png', position: { x: 2.392, y: -4.786}, quaternion: {r1: 0.000, r2: 0.000, r3: 0.076, r4: 0.997}}
+
+# For examplecafe
+#- {filename: 'table1.png', position: { x: 0.863, y: 1.953}, quaternion: {r1: -0.000, r2: -0.000, r3: 0.817, r4: 0.576}}
+#- {filename: 'table2.png', position: { x: -0.628, y: -4.280}, quaternion: {r1: 0.000, r2: 0.000, r3: 0.988, r4: -0.156}}
+#- {filename: 'table3.png', position: { x: -3.62, y: 1.370}, quaternion: {r1: 0.000, r2: 0.000, r3: 0.974, r4: 0.226}}
+#- {filename: 'table4.png', position: { x: 1.290, y: -3.330}, quaternion: {r1: 0.000, r2: 0.000, r3: -3.039, r4: 0.010}}

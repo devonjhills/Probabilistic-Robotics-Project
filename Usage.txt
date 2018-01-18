@@ -1,0 +1,53 @@
+DEMO: https://youtu.be/Aet5p8HRHbU
+
+
+
+
+
+Dependencies: 
+
+turtlebot-desktop
+turtlebot_gazebo
+turtlebot_rviz_launchers
+
+gmapping
+amcl
+rviz
+
+Usage:
+
+roscore
+
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/path/to/file/turtlebot_custom_gazebo_worlds/examplecafe2.world
+
+roslaunch turtlebot_gazebo gmapping_demo.launch
+
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+~~ here I navigated the map to produce a gmap .yaml and image ~~
+
+~~ my wall following wasnt producign a good gmap, so I used 
+roslaunch turtlebot_teleop keyboard_teleop.launch ~~
+
+rosrun map_server map_saver -f /path/to/file/turtlebot_custom_maps/examplecafe2
+
+
+~~ ctrl-c terminals ~~
+
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/path/to/file/turtlebot_custom_gazebo_worlds/examplecafe2.world
+
+
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/path/to/file/turtlebot_custom_maps/examplecafe2.yaml
+
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+~~ here I navigated the map and used 
+rosrun tf tf_echo /map /base_link
+to determine the pose facing each point I wanted to visit ~~
+
+~~ add poses to route.yaml ~~
+
+chmod +x my_move_base.py my_move_base_path.py
+
+python my_move_base_path
+
