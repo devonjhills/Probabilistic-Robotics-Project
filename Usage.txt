@@ -26,7 +26,7 @@ roslaunch turtlebot_rviz_launchers view_navigation.launch
 
 ~~ here I navigated the map to produce a gmap .yaml and image ~~
 
-~~ my wall following wasnt producign a good gmap, so I used 
+~~ my wall following wasnt producing a good gmap, so I used 
 roslaunch turtlebot_teleop keyboard_teleop.launch ~~
 
 rosrun map_server map_saver -f /path/to/file/turtlebot_custom_maps/examplecafe2
